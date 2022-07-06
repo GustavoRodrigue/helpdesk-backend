@@ -34,13 +34,16 @@ public class Chamado implements Serializable{
 	private String titulo;
 	private String observacoes;
 	
-	@ManyToOne
-	@JoinColumn(name = "tecnico_id")
-	private Tecnico tecnico;
 	
 	@ManyToOne
 	@JoinColumn(name = "cliente_id")
 	private Cliente cliente;
+	
+	@ManyToOne
+	@JoinColumn(name = "tecnico_id")
+	private Tecnico tecnico;
+	
+	
 	
 	
 	public Chamado() {

@@ -30,9 +30,11 @@ public class DBService {
 		tec1.addPerfil(Perfil.ADMIN);
 		
 		Cliente cli1 = new Cliente(null, "João", "13588439102", "joao@gmail.com", "123");
+		cli1.addPerfil(Perfil.CLIENTE);
 		
 		
 		Chamado c1 = new Chamado(null, Prioridade.MEDIA, Status.ANDAMENTO, "Chamado 01", "Primeiro chamado", tec1, cli1);
+		
 		
 		tecnicoRepository.saveAll(Arrays.asList(tec1));
 		clienteRepository.saveAll(Arrays.asList(cli1));
