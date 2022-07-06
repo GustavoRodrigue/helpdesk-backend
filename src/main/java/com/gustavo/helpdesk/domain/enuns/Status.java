@@ -1,7 +1,7 @@
 package com.gustavo.helpdesk.domain.enuns;
 
 public enum Status {
-	BAIXA(0, "BAIXA"), MEDIA(1, "MEDIA"), ALTA(2, "ALTA");
+	ABERTO(0, "ABERTO"), ANDAMENTO(1, "ANDAMENTO"), ENCERRADO(2, "ENCERRADO");
 
 	private Integer codigo;
 	private String descricao;
